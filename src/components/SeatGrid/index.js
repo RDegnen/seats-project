@@ -21,7 +21,7 @@ ClassHeader.propTypes = {
   row: PropTypes.arrayOf(seatPropType).isRequired,
 }
 
-const SeatGrid = ({ seats }) => {
+const SeatGrid = ({ seats, ...rest }) => {
   return (
     <Container>
       {[classes.FIRST, classes.BUSINESS, classes.ECONOMY].map(seatClass => {
@@ -33,7 +33,7 @@ const SeatGrid = ({ seats }) => {
             {Object.keys(classObj).map(rowKey => {
               const row = classObj[rowKey]
               return (
-                <SeatRow key={`${rowKey}`} row={row} />
+                <SeatRow key={`${rowKey}`} row={row} {...rest} />
               )
             })}
           </Fragment>

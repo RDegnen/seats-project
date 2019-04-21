@@ -1,0 +1,12 @@
+.seat {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  margin: 10px 5px;
+}
+
+.aisle {
+  width: 50px;
+  display: block;
+  margin: 10px 5px;
+}

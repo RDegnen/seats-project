@@ -6,4 +6,5 @@ export const seatPropType = PropTypes.shape({
   class: PropTypes.string,
   occupied: PropTypes.bool,
   aisle: PropTypes.bool,
+  selected: PropTypes.bool,
 })

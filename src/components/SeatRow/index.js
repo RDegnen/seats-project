@@ -1,31 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Row, Col } from 'reactstrap'
+import { Row } from 'reactstrap'
 
 import { seatPropType } from '../props'
+import RowItem from '../RowItem'
 import './style.css'
 
-const Seat = () => (
-  <div className="seat"></div>
+const SeatRow = ({ row, ...rest }) => (
+  <Row className="seatRow">
+    {row.map(seat => (
+      <RowItem
+        key={`${seat.seat}${seat.class}`}
+        item={seat}
+        {...rest}
+      />
+    ))}
+  </Row>
 )
-
-const Aisle = ({ row }) => (
-  <span className="aisle">{row}</span>
-)
-
-const SeatRow = ({ row }) => {
-  return (
-    <Row className="seatRow">
-      {row.map(({ seat, aisle, class: seatClass, row }) => {
-        return (
-          <Col key={`${seat}${seatClass}`}>
-            {aisle ? <Aisle row={row} /> : <Seat />}
-          </Col>
-        )
-      })}
-    </Row>
-  )
-}
 
 SeatRow.propTypes = {
   row: PropTypes.arrayOf(seatPropType).isRequired,
