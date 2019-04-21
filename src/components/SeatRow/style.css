@@ -1,0 +1,10 @@
+.seat {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.seatRow {
+  display: flex;
+}
