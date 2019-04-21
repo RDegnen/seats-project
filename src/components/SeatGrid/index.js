@@ -9,8 +9,10 @@ import './style.css'
 
 const ClassHeader = ({ row }) => (
   <Row className="headerRow">
-    {row.map(({ seat }) => (
-      <Col key={seat} className="headerCol">{seat}</Col>
+    {row.map(({ seat, aisle }) => (
+      <Col key={seat} className="headerCol">
+        {aisle ? '' : seat}
+      </Col>
     ))}
   </Row>
 )

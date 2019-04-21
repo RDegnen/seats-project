@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 import SeatGrid from '../../components/SeatGrid'
-import { mapSeats } from './utils'
+import { createLayout } from './utils'
 
 const SeatMap = () => {
   const [seats, setSeats] = useState({})
@@ -15,7 +15,7 @@ const SeatMap = () => {
           .then(json => json)
           .catch(err => err)
 
-    setSeats(mapSeats(res))
+    setSeats(createLayout(res))
   }
 
   useEffect(() => {

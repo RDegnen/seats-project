@@ -8,3 +8,8 @@
 .seatRow {
   display: flex;
 }
+
+.aisle {
+  width: 50px;
+  display: block;
+}
