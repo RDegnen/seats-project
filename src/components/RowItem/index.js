@@ -3,11 +3,12 @@ import PropTypes from 'prop-types'
 import { Col } from 'reactstrap'
 
 import { seatPropType } from '../props'
+import { colors } from '../../constants'
 import './style.css'
 
 const setColor = (occupied, selected) => ({
-  backgroundColor: occupied ? 'grey' : 
-    selected ? 'pink' :'blue'
+  backgroundColor: occupied ? colors.LIGHT_GREY : 
+    selected ? colors.LOLA_PINK : colors.LOLA_BLUE
 })
 
 const Seat = ({ occupied, onClick, selected }) => (

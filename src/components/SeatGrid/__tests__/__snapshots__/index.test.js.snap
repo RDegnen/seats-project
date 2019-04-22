@@ -1,0 +1,244 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SeatGrid /> should match snapshot 1`] = `
+<Container
+  tag="div"
+>
+  <ClassHeader
+    row={
+      Array [
+        Object {
+          "class": "First",
+          "occupied": true,
+          "row": 3,
+          "seat": "A",
+        },
+        Object {
+          "class": "First",
+          "occupied": true,
+          "row": 3,
+          "seat": "B",
+        },
+      ]
+    }
+  />
+  <SeatRow
+    key="3"
+    row={
+      Array [
+        Object {
+          "class": "First",
+          "occupied": true,
+          "row": 3,
+          "seat": "A",
+        },
+        Object {
+          "class": "First",
+          "occupied": true,
+          "row": 3,
+          "seat": "B",
+        },
+      ]
+    }
+    selectSeat={[MockFunction]}
+  />
+  <ClassHeader
+    row={
+      Array [
+        Object {
+          "aisle": true,
+          "row": 12,
+          "seat": "A",
+        },
+        Object {
+          "aisle": true,
+          "row": 12,
+          "seat": "B",
+        },
+        Object {
+          "class": "Business",
+          "occupied": true,
+          "row": 12,
+          "seat": "C",
+        },
+        Object {
+          "aisle": true,
+          "row": 12,
+          "seat": "D",
+        },
+        Object {
+          "aisle": true,
+          "row": 12,
+          "seat": "E",
+        },
+        Object {
+          "class": "Business",
+          "occupied": false,
+          "row": 12,
+          "seat": "F",
+        },
+      ]
+    }
+  />
+  <SeatRow
+    key="12"
+    row={
+      Array [
+        Object {
+          "aisle": true,
+          "row": 12,
+          "seat": "A",
+        },
+        Object {
+          "aisle": true,
+          "row": 12,
+          "seat": "B",
+        },
+        Object {
+          "class": "Business",
+          "occupied": true,
+          "row": 12,
+          "seat": "C",
+        },
+        Object {
+          "aisle": true,
+          "row": 12,
+          "seat": "D",
+        },
+        Object {
+          "aisle": true,
+          "row": 12,
+          "seat": "E",
+        },
+        Object {
+          "class": "Business",
+          "occupied": false,
+          "row": 12,
+          "seat": "F",
+        },
+      ]
+    }
+    selectSeat={[MockFunction]}
+  />
+  <ClassHeader
+    row={
+      Array [
+        Object {
+          "class": "Economy",
+          "occupied": true,
+          "row": 21,
+          "seat": "A",
+        },
+        Object {
+          "aisle": true,
+          "row": 21,
+          "seat": "B",
+        },
+        Object {
+          "aisle": true,
+          "row": 21,
+          "seat": "C",
+        },
+        Object {
+          "class": "Economy",
+          "occupied": false,
+          "row": 21,
+          "seat": "D",
+        },
+        Object {
+          "aisle": true,
+          "row": 21,
+          "seat": "E",
+        },
+        Object {
+          "aisle": true,
+          "row": 21,
+          "seat": "F",
+        },
+        Object {
+          "aisle": true,
+          "row": 21,
+          "seat": "G",
+        },
+        Object {
+          "aisle": true,
+          "row": 21,
+          "seat": "H",
+        },
+        Object {
+          "aisle": true,
+          "row": 21,
+          "seat": "I",
+        },
+        Object {
+          "class": "Economy",
+          "occupied": false,
+          "row": 21,
+          "seat": "J",
+        },
+      ]
+    }
+  />
+  <SeatRow
+    key="21"
+    row={
+      Array [
+        Object {
+          "class": "Economy",
+          "occupied": true,
+          "row": 21,
+          "seat": "A",
+        },
+        Object {
+          "aisle": true,
+          "row": 21,
+          "seat": "B",
+        },
+        Object {
+          "aisle": true,
+          "row": 21,
+          "seat": "C",
+        },
+        Object {
+          "class": "Economy",
+          "occupied": false,
+          "row": 21,
+          "seat": "D",
+        },
+        Object {
+          "aisle": true,
+          "row": 21,
+          "seat": "E",
+        },
+        Object {
+          "aisle": true,
+          "row": 21,
+          "seat": "F",
+        },
+        Object {
+          "aisle": true,
+          "row": 21,
+          "seat": "G",
+        },
+        Object {
+          "aisle": true,
+          "row": 21,
+          "seat": "H",
+        },
+        Object {
+          "aisle": true,
+          "row": 21,
+          "seat": "I",
+        },
+        Object {
+          "class": "Economy",
+          "occupied": false,
+          "row": 21,
+          "seat": "J",
+        },
+      ]
+    }
+    selectSeat={[MockFunction]}
+  />
+</Container>
+`;

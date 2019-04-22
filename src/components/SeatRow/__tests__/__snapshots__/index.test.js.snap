@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SeatRow /> should match snapshot 1`] = `
+<Row
+  className="seatRow"
+  tag="div"
+>
+  <RowItem
+    item={
+      Object {
+        "class": "First",
+        "occupied": true,
+        "row": 3,
+        "seat": "A",
+      }
+    }
+    key="AFirst"
+    selectSeat={[MockFunction]}
+  />
+  <RowItem
+    item={
+      Object {
+        "class": "First",
+        "occupied": true,
+        "row": 3,
+        "seat": "B",
+      }
+    }
+    key="BFirst"
+    selectSeat={[MockFunction]}
+  />
+</Row>
+`;

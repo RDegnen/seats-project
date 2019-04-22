@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RowItem /> should match snapshot 1`] = `
+<Col
+  tag="div"
+  widths={
+    Array [
+      "xs",
+      "sm",
+      "md",
+      "lg",
+      "xl",
+    ]
+  }
+>
+  <Seat
+    occupied={true}
+    onClick={[Function]}
+  />
+</Col>
+`;
+
+exports[`<RowItem /> should match snapshot 2`] = `
+<Col
+  tag="div"
+  widths={
+    Array [
+      "xs",
+      "sm",
+      "md",
+      "lg",
+      "xl",
+    ]
+  }
+>
+  <Aisle
+    row={3}
+  />
+</Col>
+`;
+
+exports[`<RowItem /> should match snapshot 3`] = `
+<Col
+  tag="div"
+  widths={
+    Array [
+      "xs",
+      "sm",
+      "md",
+      "lg",
+      "xl",
+    ]
+  }
+>
+  <Seat
+    occupied={false}
+    onClick={[Function]}
+  />
+</Col>
+`;
+
+exports[`<RowItem /> should match snapshot 4`] = `
+<Col
+  tag="div"
+  widths={
+    Array [
+      "xs",
+      "sm",
+      "md",
+      "lg",
+      "xl",
+    ]
+  }
+>
+  <Seat
+    occupied={false}
+    onClick={[Function]}
+    selected={true}
+  />
+</Col>
+`;

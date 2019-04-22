@@ -5,8 +5,15 @@
   margin: 10px 5px;
 }
 
+.seat:hover {
+  cursor: pointer;
+}
+
 .aisle {
   width: 50px;
   display: block;
   margin: 10px 5px;
+  font-weight: bold;
+  color: grey;
+  padding: 15px 0;
 }
