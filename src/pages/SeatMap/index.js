@@ -1,13 +1,29 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, Fragment } from 'react'
 
 import SeatGrid from '../../components/SeatGrid'
+import SelectedSeat from './SelectedSeat'
 import { createLayout } from './utils'
 
 const seatId = (seatClass, row, seat) => `${seatClass}-${row}-${seat}`
 
+const selectedSeatColumns = [
+  {
+    title: 'Class',
+    value: ({ class: seatClass }) => seatClass,
+  },
+  {
+    title: 'Row',
+    value: ({ row }) => row,
+  },
+  {
+    title: 'Seat',
+    value: ({ seat }) => seat,
+  },
+]
+
 const SeatMap = () => {
   const [seats, setSeats] = useState({})
-  const [selectedSeat, setSelected] = useState(null)
+  const [selectedSeat, setSelected] = useState({})
 
   const getSeats = async () => {
     const res = 
@@ -36,7 +52,7 @@ const SeatMap = () => {
             selectedSeat.row, 
             selectedSeat.seat
           ) === seatId(seatClass, row, seat)) {
-        setSelected(null)
+        setSelected({})
         return
       }
     }
@@ -45,7 +61,10 @@ const SeatMap = () => {
   }
 
   return (
-    <SeatGrid seats={seats} selectSeat={selectSeat}/>
+    <Fragment>
+      <SelectedSeat seat={selectedSeat} columns={selectedSeatColumns} />
+      <SeatGrid seats={seats} selectSeat={selectSeat}/>
+    </Fragment>
   )
 }
 

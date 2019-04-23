@@ -1,8 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<SeatMap /> should match snapshot 1`] = `
-<SeatGrid
-  seats={Object {}}
-  selectSeat={[Function]}
-/>
+<Fragment>
+  <SelectedSeat
+    columns={
+      Array [
+        Object {
+          "title": "Class",
+          "value": [Function],
+        },
+        Object {
+          "title": "Row",
+          "value": [Function],
+        },
+        Object {
+          "title": "Seat",
+          "value": [Function],
+        },
+      ]
+    }
+    seat={Object {}}
+  />
+  <SeatGrid
+    seats={Object {}}
+    selectSeat={[Function]}
+  />
+</Fragment>
 `;

@@ -1,0 +1,11 @@
+.selectedSeatRow {
+  display: flex;
+  justify-content: center;
+}
+
+.selectedSeatCol {
+  margin: 10px 20px;
+  font-weight: bold;
+  color: grey;
+  font-size: 30px;
+}

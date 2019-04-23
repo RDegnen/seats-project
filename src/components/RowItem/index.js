@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { Col } from 'reactstrap'
 
@@ -11,14 +11,25 @@ const setColor = (occupied, selected) => ({
     selected ? colors.LOLA_PINK : colors.LOLA_BLUE
 })
 
-const Seat = ({ occupied, onClick, selected }) => (
-  <div 
-    className="seat" 
-    style={setColor(occupied, selected)} 
-    onClick={onClick}
-  >
-  </div>
-)
+const Seat = ({ occupied, onClick, selected }) => {
+  const [hover, setHover] = useState(false)
+  const toggleHover = () => {
+    occupied ? setHover(false) : setHover(!hover)
+  }
+  return (
+    <div 
+      className="seat" 
+      style={{
+        ...setColor(occupied, selected),
+        cursor: hover ? 'pointer' : 'auto'
+      }} 
+      onClick={onClick}
+      onMouseEnter={toggleHover}
+      onMouseLeave={toggleHover}
+    >
+    </div>
+  )
+}
 
 Seat.propTypes = {
   occupied: PropTypes.bool.isRequired,
